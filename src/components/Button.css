@@ -1,0 +1,21 @@
+.button {
+  background-color: #e7e7e7; /* Gray */
+  border: 2px solid black;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  background-color: white; /* Gray */
+  border: 2px solid #e7e7e7;
+}
