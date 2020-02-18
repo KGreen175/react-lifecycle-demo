@@ -40,8 +40,8 @@ jobs:
           name: Creating nodejs Artifact
           command: |
             mkdir ~/repo/artifact;
-            cd artifact
             zip -2 -r -x \*node_modules*\ reactNode.zip -i dist/**
+            mv reactNode.zip ~/repo/artifact
             ls
           
       - run:
