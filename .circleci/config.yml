@@ -36,7 +36,6 @@ jobs:
       # run tests!
       - run: yarn test
       
-      steps:
       - run:
           name: Creating nodejs Artifact
           command: zip -2 -r reactNode.zip . -i dist/**\*
