@@ -41,7 +41,7 @@ jobs:
           command: |
             mkdir ~/repo/artifact;
             cd artifact
-            zip -2 -r reactNode.zip ~/repo/artifact -i dist/**\*
+            zip -2 -r -x \*node_modules*\ reactNode.zip -i dist/**
             ls
           
       - run:
