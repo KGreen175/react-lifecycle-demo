@@ -41,7 +41,7 @@ jobs:
           command: |
             mkdir ~/repo/artifact;
             yarn build;
-            zip -2 -r reactNode.zip . -x node_modules -i build/
+            zip -2 -r reactNode.zip . -x  ~/repo/node_modules -i build/
             mv reactNode.zip ~/repo/artifact
             cd ~/repo/artifact
             unzip reactNode.zip
