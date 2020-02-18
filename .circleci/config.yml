@@ -38,7 +38,11 @@ jobs:
       
       - run:
           name: Creating nodejs Artifact
-          command: zip -2 -r reactNode.zip . -i dist/**\*
+          command: |
+            mkdir /artifact;
+            zip -2 -r reactNode.zip ./artifact -i dist/**\*
+            cd artifact
+            ls
           
       - run:
           name: list contents
