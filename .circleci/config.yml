@@ -42,13 +42,15 @@ jobs:
             mkdir ~/repo/artifact;
             yarn build;
             zip -2 -r reactNode.zip . -i build/
-            mv reactNode.zip ~/repo/build
+            mv reactNode.zip ~/repo/artifact
+            cd ~/repo/artifact
+            unzip reactNode.zip
             ls
           
       - run:
           name: list contents
           command: ls
 
-#       - store_artifacts:
-#           path: ./
-#           destination: reactNode.zip
+      - store_artifacts:
+          path: ./
+          destination: reactNode.zip
